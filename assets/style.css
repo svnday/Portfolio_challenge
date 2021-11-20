@@ -108,13 +108,12 @@ div #about-me-text {
 }
 
 #self-image {
-    margin-left: 10px;
+    margin: 0 10px 10px 10px;
 }
 
 .section-content p {
     font-size: 18px;
     width: 40vw;
-    margin-left: 10px;
 }
 
 div .portfolio-card {
@@ -269,6 +268,7 @@ div #card-5 {
     #about-me-text img, p {
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
 
     div .portfolio-card {
@@ -281,6 +281,7 @@ div #card-5 {
         margin-left:auto;
         margin-right: auto;
     }
+
 
     .section-content ul {
         display: flex;

@@ -1,5 +1,9 @@
 # Portfolio_challenge
 
+For the second week of my Full-Stack Developer bootcamp we were tasked with making our own portfolio website from scratch. This repository is for that task!
+
+Below are the acceptance criteria for reference:
+
 AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
