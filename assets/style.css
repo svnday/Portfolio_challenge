@@ -5,11 +5,14 @@
 }
 * {
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: var(--tertiary-color);
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    background-color var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 
@@ -24,6 +27,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 9999;
 }
 
 header h1 {
@@ -34,6 +38,7 @@ header h1 {
 
 header a {
     background-color: var(--secondary-color);
+    color: black;
     text-decoration: none;
 }
 
@@ -54,8 +59,7 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
-    border-color: black;
-    border-bottom: 3px solid;
+    font-weight: bold;
 }
 
 header a {
@@ -83,17 +87,175 @@ footer h2 {
 }
 
 .section-title {
+    position: relative;
     text-align: right;
     border-color: var(--tertiary-color);
     font-size: 30px;
+    color: black;
     width: 250px;
     padding: 25px;
     border-right: 5px solid;
+    float: left;
 }
 
 .section-content {
+    display: flex;
+    flex-wrap: wrap;
     margin: 25px;
     padding: 25px;
-    width: 50%;
+    text-decoration: none;
 }
 
+#about-me-text {
+    width: 750px;
+    margin-left: 75px;
+}
+
+
+.section-content p {
+    font-size: 18px;
+}
+
+div .portfolio-card {
+    margin: 20px;
+    border: 10px solid;
+    border-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.card-text {
+    background-color: var(--secondary-color);
+    width: 225px;
+    height: 100px;
+    bottom: 25px;
+    left: 0;
+    position: absolute;
+}
+
+.card-text p, .card-text h3 {
+    margin-left: 25px;
+}
+
+div #card-1 {
+    background-image: url("../assets/images/run-buddy.PNG");
+    max-width: 1500px;
+    height: 250px;
+    border: 10px solid;
+    border-color: var(--secondary-color)
+}
+
+div #card-2, div #card-4 {
+    width: 700px;
+    height: 250px;
+    border: 10px solid;
+    border-color: var(--secondary-color);
+    float: left;
+}
+
+div #card-3, div #card-5 {
+    width: 700px;
+    height: 250px;
+    border: 10px solid;
+    border-color: var(--secondary-color);
+    float: right;
+}
+
+div #card-2 {
+    background-image: url("../assets/images/robot-gladiators.PNG");
+    background-position: center;
+}
+
+div #card-3 {
+    background-image: url("../assets/images/horiseon.PNG");
+    background-position: center;
+}
+
+div #card-4 {
+    background-image: url("../assets/images/LED\ Wall.PNG");
+    background-position: center;
+}
+
+div #card-5 {
+    background-image: url("../assets/images/calculator.PNG");
+    background-position: center;
+}
+
+.section-content ul {
+    list-style-type: none;
+    margin-left: 25px;
+    font-size: 50px;
+}
+
+.section-content li {
+    display: inline-block;
+    padding: 10px 50px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 980px) {
+
+    header {
+        padding-bottom: 15px;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .portfolio-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .section-title {
+        position: relative;
+        text-align: center;
+        border-right: 0;
+        border-bottom: 5px solid;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-content {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #about-me-text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section-content ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        float: left;
+        text-align: center;
+    }
+}
