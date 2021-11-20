@@ -268,7 +268,7 @@ div #card-5 {
     #about-me-text img, p {
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
+        text-align: left;
     }
 
     div .portfolio-card {
