@@ -99,7 +99,7 @@ footer h2 {
     flex-wrap: wrap;
     padding: 25px;
     text-decoration: none;
-    max-width: 75vw;
+    max-width: 74vw;
 }
 
 div #about-me-text {
@@ -143,8 +143,9 @@ div .portfolio-card {
 .portfolio-cards {
     display: flex;
     flex-wrap: wrap;
-    background-size: cover;
 }
+
+
 
 div #card-1 {
     background-image: url("../assets/images/run-buddy.PNG");
@@ -152,6 +153,9 @@ div #card-1 {
     height: 250px;
     border: 10px solid;
     border-color: var(--secondary-color);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 50%;
 }
 
 div #card-2, div #card-4 {
@@ -160,6 +164,10 @@ div #card-2, div #card-4 {
     border: 10px solid;
     border-color: var(--secondary-color);
     float: left;
+    margin: 3px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 50%;
 }
 
 div #card-3, div #card-5 {
@@ -168,6 +176,10 @@ div #card-3, div #card-5 {
     border: 10px solid;
     border-color: var(--secondary-color);
     float: right;
+    margin: 3px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 50%;
 }
 
 div #card-2 {
@@ -188,6 +200,10 @@ div #card-4 {
 div #card-5 {
     background-image: url("../assets/images/calculator.PNG");
     background-position: center;
+}
+
+#card-1:hover, #card-2:hover, #card-3:hover, #card-4:hover, #card-5:hover {
+    opacity: 100%;
 }
 
 .section-content ul {
