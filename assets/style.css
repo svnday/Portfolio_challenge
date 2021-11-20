@@ -110,6 +110,7 @@ div #about-me-text {
 .section-content p {
     font-size: 18px;
     width: 40vw;
+    margin-left: 10px;
 }
 
 div .portfolio-card {
