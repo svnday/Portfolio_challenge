@@ -2,6 +2,8 @@
 
 For the second week of my Full-Stack Developer bootcamp we were tasked with making our own portfolio website from scratch. This repository is for that task!
 
+Link to deployment: https://svnday.github.io/Portfolio_challenge/
+
 Below are the acceptance criteria for reference:
 
 AS AN employer
