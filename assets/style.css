@@ -103,13 +103,13 @@ footer h2 {
 }
 
 div #about-me-text {
-    max-width: 65vw;
+    max-width: 5vw;
     padding: 25px;
 }
 
-
 .section-content p {
     font-size: 18px;
+    width: 40vw;
 }
 
 div .portfolio-card {
@@ -197,6 +197,7 @@ div #card-5 {
     text-decoration: none;
 }
 
+
 @media screen and (max-width: 1080px) {
 
     header {
@@ -244,8 +245,15 @@ div #card-5 {
         padding: 0;
     }
 
+    #about-me-text img, p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     div .portfolio-card {
         width: 65vw;
+        margin-left: auto;
+        margin-right:
     }
 
     .section-content {
