@@ -3,10 +3,10 @@
     --secondary-color: lightslategray;
     --tertiary-color: darkslategray;
 }
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--tertiary-color);
-    border: 0;
     padding: 0;
     margin: 0;
 }
@@ -19,11 +19,10 @@ body {
 
 /* begin header/footer and navigation bar styling */
 header {
-    padding: 20px 35px;
+    padding: 20px;
     background-color: var(--secondary-color);
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -31,7 +30,6 @@ header {
 }
 
 header h1 {
-    display: inline-block;
     font-size: 48px;
     margin: 5px;
 }
@@ -44,8 +42,6 @@ header a {
 
 header nav {
     padding-top: 15px;
-    margin-right: 7px 0;
-    float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     background-color: var(--secondary-color);
@@ -84,6 +80,7 @@ footer h2 {
     flex-wrap: wrap;
     padding-bottom: 30px;
     padding-top: 30px;
+    width: 100vw;
 }
 
 .section-title {
@@ -95,20 +92,19 @@ footer h2 {
     width: 250px;
     padding: 25px;
     border-right: 5px solid;
-    float: left;
 }
 
 .section-content {
     display: flex;
     flex-wrap: wrap;
-    margin: 25px;
     padding: 25px;
     text-decoration: none;
+    max-width: 75vw;
 }
 
-#about-me-text {
-    width: 750px;
-    margin-left: 75px;
+div #about-me-text {
+    max-width: 65vw;
+    padding: 25px;
 }
 
 
@@ -117,7 +113,7 @@ footer h2 {
 }
 
 div .portfolio-card {
-    margin: 20px;
+    margin: 6px;
     border: 10px solid;
     border-color: var(--secondary-color);
     position: relative;
@@ -127,8 +123,8 @@ div .portfolio-card {
 
 .card-text {
     background-color: var(--secondary-color);
-    width: 225px;
-    height: 100px;
+    width: 15rem;
+    height: 4rem;
     bottom: 25px;
     left: 0;
     position: absolute;
@@ -136,18 +132,25 @@ div .portfolio-card {
 
 .card-text p, .card-text h3 {
     margin-left: 25px;
+    margin-top: 10px;
+}
+
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
 }
 
 div #card-1 {
     background-image: url("../assets/images/run-buddy.PNG");
-    max-width: 1500px;
+    width: 65vw;
     height: 250px;
     border: 10px solid;
-    border-color: var(--secondary-color)
+    border-color: var(--secondary-color);
 }
 
 div #card-2, div #card-4 {
-    width: 700px;
+    min-width: 32vw;
     height: 250px;
     border: 10px solid;
     border-color: var(--secondary-color);
@@ -155,7 +158,7 @@ div #card-2, div #card-4 {
 }
 
 div #card-3, div #card-5 {
-    width: 700px;
+    min-width: 32vw;
     height: 250px;
     border: 10px solid;
     border-color: var(--secondary-color);
@@ -194,7 +197,7 @@ div #card-5 {
     text-decoration: none;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1080px) {
 
     header {
         padding-bottom: 15px;
@@ -226,6 +229,8 @@ div #card-5 {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        max-width: 100%;
+        margin: auto;
     }
 
     .section-title {
@@ -236,26 +241,23 @@ div #card-5 {
         width: 25%;
         margin-left: auto;
         margin-right: auto;
+        padding: 0;
+    }
+
+    div .portfolio-card {
+        width: 65vw;
     }
 
     .section-content {
-        text-align: left;
-        margin-left: auto;
+        margin-left:auto;
         margin-right: auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #about-me-text {
-        margin-left: 0;
-        margin-right: 0;
     }
 
     .section-content ul {
         display: flex;
         flex-direction: column;
         font-size: 40px;
-        float: left;
         text-align: center;
+        margin: auto;
     }
 }
