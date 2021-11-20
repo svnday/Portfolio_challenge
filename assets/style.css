@@ -107,6 +107,10 @@ div #about-me-text {
     padding: 25px;
 }
 
+#self-image {
+    margin-left: 10px;
+}
+
 .section-content p {
     font-size: 18px;
     width: 40vw;
