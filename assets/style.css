@@ -75,6 +75,8 @@ footer h2 {
 
 /* end header/footer and nav styling */
 
+/* general portfolio styling start*/
+
 .portfolio-section {
     display: flex;
     flex-wrap: wrap;
@@ -102,6 +104,10 @@ footer h2 {
     max-width: 74vw;
 }
 
+/*general portfolio styling end*/
+
+/*about me styling start */
+
 div #about-me-text {
     max-width: 5vw;
     padding: 25px;
@@ -115,6 +121,8 @@ div #about-me-text {
     font-size: 18px;
     width: 40vw;
 }
+/* about me styling end */
+/* portfolio card styling start */
 
 div .portfolio-card {
     margin: 6px;
@@ -205,6 +213,10 @@ div #card-5 {
     opacity: 100%;
 }
 
+/*portfolio cards' styling end */
+
+/*contact me styling start */
+
 .section-content ul {
     list-style-type: none;
     margin-left: 25px;
@@ -217,6 +229,9 @@ div #card-5 {
     text-decoration: none;
 }
 
+/* contact me styling end */
+
+/* media query start, follows same structure as previous css */
 
 @media screen and (max-width: 1080px) {
 
@@ -291,3 +306,5 @@ div #card-5 {
         margin: auto;
     }
 }
+
+/* media query styling end */
