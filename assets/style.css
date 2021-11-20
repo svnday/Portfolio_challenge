@@ -75,8 +75,25 @@ footer h2 {
 
 /* end header/footer and nav styling */
 
-/* begin title styling */
-/* end title styling */
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
 
-/* begin portfolio card styling */
-/* end portfolio card styling */
+.section-title {
+    text-align: right;
+    border-color: var(--tertiary-color);
+    font-size: 30px;
+    width: 250px;
+    padding: 25px;
+    border-right: 5px solid;
+}
+
+.section-content {
+    margin: 25px;
+    padding: 25px;
+    width: 50%;
+}
+
